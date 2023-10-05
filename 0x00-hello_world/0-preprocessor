@@ -1,0 +1,2 @@
+#!/bin/bash
+./betty_style.pl $CFILE c
