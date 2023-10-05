@@ -1,3 +1,6 @@
+/**this function puts prints the text
+ *"programming is like building a multilingual
+ *puzzle*/
 #include<stdio.h>
 int main(void)
 {
