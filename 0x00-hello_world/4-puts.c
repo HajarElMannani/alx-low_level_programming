@@ -2,7 +2,7 @@
 
 /**
  *main- prints "Programming is lie building a multilingual puzzle
- *return the value 0
+ *return=0 if the function is well exited 
 */
 int main(void)
 {
