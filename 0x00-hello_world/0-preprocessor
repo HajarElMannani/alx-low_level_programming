@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE > c
+./betty_style.pl $CFILE > c
