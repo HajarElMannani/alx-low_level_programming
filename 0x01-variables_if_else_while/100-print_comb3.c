@@ -8,7 +8,7 @@ int main(void)
 int n, p;
 for (n = '0'; n <= '9'; n++)
 {
-for (p = i; p <= '9'; p++)
+for (p = ++n; p <= '9'; p++)
 {
 if (p != n)
 {
