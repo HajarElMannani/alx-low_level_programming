@@ -6,9 +6,11 @@
 int main(void)
 {
 int n, p;
+int i;
+i = 0;
 for (n = '0'; n <= '9'; n++)
 {
-for (p = '0'; p <= '9'; p++)
+for (p = i; p <= '9'; p++)
 {
 if (p != n)
 {
@@ -21,6 +23,8 @@ putchar(',');
 putchar(' ');
 }
 }
+i++;
 }
+putchar('\n');
 return (0);
 }
