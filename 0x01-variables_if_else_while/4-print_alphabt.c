@@ -6,11 +6,9 @@
 int main(void)
 {
 char n;
-while (n != 'e' || n != 'q')
-{
 for (n = 'a'; n <= 'z' ; n++)
+if (n != 'e' && n != 'q')
 putchar(n);
 putchar('\n');
-}
 return (0);
 }
