@@ -1,0 +1,16 @@
+#include<stdio.h>
+/**
+*main-start the program
+*Return: 0 when success
+*/
+int main(void)
+{
+char n;
+char u;
+for (n = 'a'; n <= 'z'; n++)
+putchar(n);
+for (u = 'A'; u <= 'Z'; u++)
+putchar(u);
+putchar('\n');
+return (0);
+}
