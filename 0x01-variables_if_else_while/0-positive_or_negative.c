@@ -7,7 +7,7 @@
  *main-Start of code 
  *Return:0 when success
  */
- main(void)
+int  main(void)
 {
   int n;
   srand(time(0));
