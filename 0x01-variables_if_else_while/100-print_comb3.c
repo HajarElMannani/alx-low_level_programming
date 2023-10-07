@@ -5,22 +5,21 @@
  */
 int main(void)
 {
-  int n, i;
+int n, p;
 for (n = '0'; n <= '8'; n++)
 {
-while (i < n)
+for (p = '0'; p <= '9'; p++)
+{
+if (n != p && n < p)
 {
 putchar(n);
-i = n + 1;
-putchar(i);
-i++;
-if (n < 8)
-{
+putchar(p);
+}
 putchar(',');
 putchar(' ');
-}
-}
-}
+if (n == '8' && p == '9')
 putchar('\n');
+}
+}
 return (0);
 }
