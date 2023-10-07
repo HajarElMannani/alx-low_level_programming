@@ -5,22 +5,15 @@
  */
 int main(void)
 {
-int n, p;
-for (n = '0'; n <= '9'; n++)
-{
-for (p = '0'; p <= '9'; p++)
-{
-if (p != n)
+int n;
+for (n = '0'; n <= '8'; n++)
 {
 putchar(n);
-putchar(p);
-}
-if (p < '9')
+putchar(n + 1);
+if (n < 8)
 {
 putchar(',');
 putchar(' ');
-}
-}
 }
 }
 putchar('\n');
