@@ -14,9 +14,9 @@ if (n != p && n < p)
 {
 putchar(n);
 putchar(p);
-}
 putchar(',');
 putchar(' ');
+}
 if (n == '8' && p == '9')
 putchar('\n');
 }
