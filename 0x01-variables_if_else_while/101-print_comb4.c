@@ -12,7 +12,7 @@ for (p = '0'; p <= '9'; p++)
 {
 for (k = '0'; k <= '9'; k++)
 {
-if (!(n == p == k) && (n < p && p < k))
+if ((n != p && p != k && n != k) && (n < p && p < k))
 {
 putchar(n);
 putchar(p);
