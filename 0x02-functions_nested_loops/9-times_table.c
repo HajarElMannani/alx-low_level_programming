@@ -1,4 +1,4 @@
-#include"main.c"
+#include"main.h"
 /**
  *times_table - Print the 9 time table
  *@void: returns nothing
