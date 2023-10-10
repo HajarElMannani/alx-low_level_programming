@@ -12,10 +12,12 @@ if (n < 0)
 n = n * -1;
 n = n % 10;
 return (n);
+return (n);
 }
 if (n > 0)
 {
 n = n % 10;
+return (n);
 return (n);
 }
 else
