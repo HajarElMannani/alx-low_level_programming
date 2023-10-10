@@ -1,4 +1,4 @@
-#include<main.h>
+#include<stdio.h>
 /**
  *main- This program prints _putchar
  *_putchar: write character to print
