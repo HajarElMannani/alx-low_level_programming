@@ -13,7 +13,8 @@ for (i = 0; i <= 9; i++)
 for (n = 0; n <= 9; n++)
 {
 b = n * i;
-write(1, &b, 200);
+_putchar(b / 10 + '0');
+_putchar(b % 10 + '0');
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
