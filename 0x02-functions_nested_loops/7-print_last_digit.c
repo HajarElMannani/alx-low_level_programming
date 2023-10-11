@@ -12,6 +12,8 @@ if (n < 0)
 n = n * -1;
 }
 b = n % 10;
+if (b < 0)
+b = b * -1;
 _putchar(b + '0');
 return (b);
 }
