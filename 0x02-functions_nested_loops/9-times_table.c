@@ -12,7 +12,7 @@ for (i = 0; i <= 9; i++)
 for (n = 0; n <= 9; n++)
 {
 b = n * i;
-_putchar(b - '0');
+_putchar('0' + b);
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
