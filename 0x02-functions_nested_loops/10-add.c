@@ -1,12 +1,12 @@
 #include"main.h"
 /**
- *add - Function that adds two numbers
- *@int: integers to add
- *Return: sum of integers
+ *add - function that calculates the sumof two numbers
+ * @a: integer to add
+ *@b: integer to add
+ *Return: integer sum of integers a and b
  */
 int add(int a, int b)
 {
-int a, b;
 int c;
 c = a + b;
 return (c);
