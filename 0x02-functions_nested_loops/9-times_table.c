@@ -14,7 +14,7 @@ for (n = 0; n <= 9; n++)
 b = n * i;
 if (b == 0)
 {
-_putchar('0');
+_putchar(b + '0');
 }
 if (b >= 1 && b <= 9)
 {
