@@ -39,10 +39,9 @@ _putchar(b / 10 + '0');
 _putchar(b % 10 + '0');
  if (n !=9){
    _putchar(','); 
-
 _putchar(' ');
  }
 }
 _putchar('\n');
 }
-}
+ }
