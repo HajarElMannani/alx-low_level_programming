@@ -15,23 +15,20 @@ b = n * i;
 if (b == 0)
 {
 _putchar('0');
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
 }
 if (b >= 1 && b <= 9)
 {
-_putchar(b % 10 + '0');
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+_putchar(b % 10 + '0');
 }
 else if (b >= 10)
 {
-_putchar(b / 10 + '0');
-_putchar(b % 10 + '0');
 _putchar(',');
 _putchar(' ');
+_putchar(b / 10 + '0');
+_putchar(b % 10 + '0');
 }
 }
 _putchar('\n');
