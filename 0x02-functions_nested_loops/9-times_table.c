@@ -1,4 +1,5 @@
 #include"main.h"
+#include<unistd.h>
 /**
  *times_table - Print the 9 time table
  *@void: returns nothing
@@ -12,7 +13,7 @@ for (i = 0; i <= 9; i++)
 for (n = 0; n <= 9; n++)
 {
 b = n * i;
-_putchar('0' + b);
+write(1, &b, 2);
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
