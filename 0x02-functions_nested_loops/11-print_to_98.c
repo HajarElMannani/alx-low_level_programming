@@ -15,7 +15,7 @@ for (i = n + 1; i <= 98; i++)
 {
 printf(", %d", i);
 }
-}
+}  
 else if (n > 98)
 {
 for (i = n; i >= 98; i--)
@@ -23,6 +23,6 @@ for (i = n; i >= 98; i--)
 printf(", %d", i);
 }
 }
-_putchar('\n');
-_putchar('\n');
+else
+printf("%d\n", 98);
 }
