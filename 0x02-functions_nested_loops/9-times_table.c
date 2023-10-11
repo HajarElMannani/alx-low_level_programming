@@ -13,6 +13,11 @@ for (i = 0; i <= 9; i++)
 for (n = 0; n <= 9; n++)
 {
 b = n * i;
+if (b == 0)
+_putchar(0 + '0');
+if (b >= 1 && b <= 9)
+_putchar(b % 10 + '0');
+else
 _putchar(b / 10 + '0');
 _putchar(b % 10 + '0');
 _putchar(',');
