@@ -16,10 +16,8 @@ if (i != 98)
 {
 printf("%d, ", i);
 }
-if (i == 98)
-{
+else
 printf("%d\n", 98);
-}
 }
 else if (n > 98)
 {
@@ -29,9 +27,7 @@ if (n != 98)
 {
 printf("%d, ", i);
 }
-if (n == 98)
-{
+else
 printf("%d\n", 98);
-}
 }
 }
