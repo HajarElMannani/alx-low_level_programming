@@ -2,7 +2,7 @@
 /**
  *main - print numbers from 0 to 100 and replace multiples of 3 by Fizz
  *multiples of 5 by Buzz, multiples of 3 and 5 by FizzBuzz
- *Return: nothing to return
+ *Return: 0 when success
  */
 int main(void)
 {
@@ -19,4 +19,5 @@ else
 printf("%d ", n);
 }
 printf("\n");
+return (0);
 }
