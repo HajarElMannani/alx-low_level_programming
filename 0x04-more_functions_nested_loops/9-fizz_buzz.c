@@ -4,7 +4,7 @@
  *multiples of 5 by Buzz, multiples of 3 and 5 by FizzBuzz
  *Return: nothing to return
  */
-in  main(void)
+int  main(void)
 {
 int n;
 for (n = 0; n <= 100; n++)
