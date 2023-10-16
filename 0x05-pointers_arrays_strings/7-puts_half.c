@@ -13,9 +13,19 @@ while (str[i] != '\0')
 i++;
 }
 len = i;
-for (j = len -1 / 2; j < len; j++)
+if (len % 2 == 0)
+{
+for (j = len / 2; j < len; j++)
 {
 _putchar(str[j]);
+}
+}
+if (len % 2 == 1)
+{
+for (j = len - 1 / 2; j < len; j++)
+{
+_putchar(str[j]);
+}
 }
 _putchar('\n');
 }
