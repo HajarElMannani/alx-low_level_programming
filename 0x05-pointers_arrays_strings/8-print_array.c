@@ -18,7 +18,7 @@ j++;
 len = j;
 if (n <= len)
 {
-for (i = 1; i <= n; i++)
+for (i = 1; i < n; i++)
 {
 printf(", %d", a[i]);
 }
