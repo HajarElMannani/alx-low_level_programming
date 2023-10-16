@@ -22,7 +22,7 @@ _putchar(str[j]);
 }
 if (len % 2 == 1)
 {
-for (j = len - 1 / 2; j < len; j++)
+for (j = (len - 1) / 2; j < len; j++)
 {
 _putchar(str[j]);
 }
