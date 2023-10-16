@@ -15,10 +15,10 @@ while (s[i] != '\0')
 i++;
 }
 len = i;
-for (j = len - 1; j >= len / 2; j--)
+for (j = len - 1 ;j >= len / 2; j--)
 {
 c = s[j];
-s[n] = s[j];
+s[j] = s[n];
 s[n++] = c; 
 }
 }
