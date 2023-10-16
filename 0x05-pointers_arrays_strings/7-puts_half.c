@@ -22,9 +22,9 @@ _putchar(str[j]);
 }
 if (len % 2 == 1)
 {
-for (j = (len - 1) / 2; j < len; j++)
+for (j = (len - 1) / 2; j < len - 1; j++)
 {
-_putchar(str[j]);
+_putchar(str[j + 1]);
 }
 }
 _putchar('\n');
