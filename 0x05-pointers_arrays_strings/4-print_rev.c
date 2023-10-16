@@ -6,9 +6,14 @@
  */
 void print_rev(char *s)
 {
-int i, n;
-n = _strlen(s);
-i = n;
+int i, j, len;
+j = 0;
+while (s[j] != '\0')
+{
+j++;
+}
+len = j;
+i = len;
 while (i >= 0)
 {
 _putchar(s[i]);
