@@ -24,14 +24,16 @@ _putchar(' ');
 }
 else if (p >= 10 && p <= 99)
 {
-_putchar(p + '0');
+_putchar(p /10 + '0');
+_putchar(p % 10 +'0'); 
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
 }
 else
 {
-_putchar(p + '0');
+_putchar(p / 10 + '0');
+_putchar(p % 10 + '0'); 
 _putchar(',');
 _putchar(' ');
 }
