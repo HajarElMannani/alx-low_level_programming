@@ -15,8 +15,11 @@ while (src[i] != '\0')
 i++;
 }
 len = i;
-for (j = 0; j < len - 1; j++)
+for (j = 0; j < len; j++)
 {
+if (src[j] == '\0')
+dest[j] == '\0';
+else
 dest[j] = src[j];
 }
 return (dest);
