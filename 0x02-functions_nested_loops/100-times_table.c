@@ -16,24 +16,24 @@ for (j = 0; j <= n; j++)
 p = i * j;
 if(p >= 0 && p <= 9)
 {
-putchar(p + '0');
-putchar(',');
-putchar(' ');
-putchar(' ');
-putchar(' ');
+_putchar(p + '0');
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
 }
 else if (p >= 10 && p <= 99)
 {
-putchar(p + '0');
-putchar(',');
-putchar(' ');
-putchar(' ');
+_putchar(p + '0');
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
 }
 else
 {
-putchar(p + '0');
-putchar(',');
-putchar(' ');
+_putchar(p + '0');
+_putchar(',');
+_putchar(' ');
 }
 }
 }
