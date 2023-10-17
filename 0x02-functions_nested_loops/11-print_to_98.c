@@ -26,5 +26,4 @@ printf("%d\n", 98);
 }
 else
 printf("%d\n", 98);
-return (0);
 }
