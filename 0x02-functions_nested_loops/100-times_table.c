@@ -39,7 +39,7 @@ else if (p >= 100)
 _putchar(',');
 _putchar(' ');
 _putchar((p / 100) + '0');
-_putchar(((p % 10) % 10) + '0');
+_putchar(((p / 10) % 10) + '0');
 _putchar((p % 10) + '0');
 }
 }
