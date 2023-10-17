@@ -4,6 +4,8 @@
 *@n: n times table
 *Return: Nothing
 */
+void print_times_table(int n)
+{
 int i, j, p;
 if (n >= 0 && n <= 15)
 {
@@ -32,6 +34,7 @@ else
 putchar(p + '0');
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
