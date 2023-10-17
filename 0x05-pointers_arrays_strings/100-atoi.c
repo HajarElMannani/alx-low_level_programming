@@ -6,10 +6,10 @@
  */
 int _atoi(char *s)
 {
-  int i, j, len;
+  int i, j, len, k;
   i = 0;
   while (s[i] != '\0')
-    {
+    { 
       i++;
     }
   len = i;
@@ -26,7 +26,5 @@ int _atoi(char *s)
 	}
       if (s[j] >= 48 && s[j] <= 57)
 	_putchar(s[j]);
-      else
-	return (0);
     }
 }
