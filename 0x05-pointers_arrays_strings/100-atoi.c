@@ -22,9 +22,11 @@ int _atoi(char *s)
 	{
 	  s[j] = s[j] * s[j-1];
          	}
-      _putchar(s[j]);
+      return (s[j]);
 	}
       if (s[j] >= 48 && s[j] <= 57)
-	_putchar(s[j]);
+	return (s[j]);
+      else
+	return (0);
     }
 }
