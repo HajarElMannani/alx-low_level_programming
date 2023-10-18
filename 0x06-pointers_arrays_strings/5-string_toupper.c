@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *string_toupper - Change all lowercase 
+ *string_toupper - Change all lowercase
  *letters of a string to uppercase
  *@a: string to convert
  *Return: Nothing
@@ -17,4 +17,5 @@ a[i] = a[i] - 32;
 }
 i++;
 }
+return (s);
 }
