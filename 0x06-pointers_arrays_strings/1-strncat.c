@@ -3,12 +3,14 @@
  *_strncat - concatenate two strings
  *@dest: first string
  *@src: string to concatenate
+ *@n: number of bytes to concatenate
  *Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
 int i, j;
-i = j = 0;
+i = 0;
+j = 0;
 while (dest[i] != '\0')
 {
 i++;
