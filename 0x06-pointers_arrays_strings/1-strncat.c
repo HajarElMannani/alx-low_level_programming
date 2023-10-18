@@ -4,7 +4,7 @@
  *@dest: first string
  *@src: string to concatenate
  *@n: number of bytes to concatenate
- *Return: dest
+ *Return: pointer to string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -17,7 +17,7 @@ i++;
 }
 while (src[j] != '\0' && j < n)
 {
-dest[i] = sec[j];
+dest[i] = src[j];
 i++;
 j++;
 }
