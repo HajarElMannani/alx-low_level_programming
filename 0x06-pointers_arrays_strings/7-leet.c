@@ -7,8 +7,8 @@
 char *leet(char *a)
 {
 int i, j;
-char al = "aAeEoOtTlL";
-char num = "4433007711";
+char *al = "aAeEoOtTlL";
+char *num = "4433007711";
 i = 0;
 while (a[i] != '\0')
 {
