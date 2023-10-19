@@ -12,7 +12,7 @@ char *s2 = "nopqrstuvwxyzNOPQRSTUVWXYZabcdefghijklmABCDEFGHIJKLM";
 i = 0;
 while (a[i] != '\0')
 {
-for (j = 0; s1[j] != '\0'; j++)
+for (j = 0; j < 52; j++)
 {
 if (a[i] == s1[j])
 {
