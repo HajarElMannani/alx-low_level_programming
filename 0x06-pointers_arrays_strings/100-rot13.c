@@ -7,12 +7,12 @@
 char *rot13(char *a)
 {
 int i, j;
-char *s1 = "abcdefghijklmABCDEFGHIJKLM";
-char *s2 = "nopqrstuvwxyzNOPQRSTUVWXYZ";
+char *s1 = "abcdefghijklmABCDEFGHIJKLMnopqrstuvwxyzNOPQRSTUVWXYZ";
+char *s2 = "nopqrstuvwxyzNOPQRSTUVWXYZabcdefghijklmABCDEFGHIJKLM";
 i = 0;
 while (a[i] != '\0')
 {
-for (j = 0; j < 26; j++)
+for (j = 0; j < 52; j++)
 {
 if (a[i] == s1[j])
 a[i] = s2[j];
