@@ -12,12 +12,10 @@ while (*s != 0)
 if (*s == c)
 {
 return (s - 1);
-break;
-}
-s++;
 }
 if (*s == 0)
 {
 return (NULL);
+}
 }
 }
