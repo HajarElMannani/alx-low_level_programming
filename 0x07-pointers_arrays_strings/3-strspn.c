@@ -22,6 +22,7 @@ if (accept[j] == s[i])
 n++;
 state = 1;
 }
+i++;
 }
 if (state == 0)
 return (n);
