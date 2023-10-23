@@ -14,7 +14,7 @@ if (*s == c)
 return (s);
 break;
 }
-*s++;
+s++;
 }
 if (*s == '\0')
 {
