@@ -21,7 +21,7 @@ int prime_check(int n, int j)
 {
 if (j <= 1)
 return (0);
-if (n % j == 0 && j < 1)
+if (n % j == 0 && j > 1)
 return (0);
 if ((n / j) < j)
 return (1);
