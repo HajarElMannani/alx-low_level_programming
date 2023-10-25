@@ -8,7 +8,9 @@ int prime_check(int n, int j);
  */
 int is_prime_number(int n)
 {
-return (prime_check(n, 1));
+if (n <= 1)
+return (0);
+return (prime_check(n, n - 1));
 }
 
 /**
@@ -19,11 +21,9 @@ return (prime_check(n, 1));
  */
 int prime_check(int n, int j)
 {
-if (j <= 1)
-return (0);
-if (n % j == 0 && j > 1)
-return (0);
-if ((n / j) < j)
+if (j == 1)
 return (1);
-return (prime_check(n, j + 1));
+if (n % j == 0 && j > 0)
+return (0);
+return (prime_check(n, j - 1));
 }
