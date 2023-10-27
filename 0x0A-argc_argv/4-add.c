@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
  *main - program that adds positive numbers
  *@argc: length of argv
@@ -15,12 +14,12 @@ if (argc < 1)
 printf("0\n");
 for (i = 1; i < argc; i++)
 {
-if (!atoi(argv[i]))
+if (!isdigit(argv[i]))
 {
 printf("Error\n");
 return (1);
 }
-add += atoi(*argv[i]);
+add += atoi(argv[i]);
 }
 printf("%d\n", add);
 return (0);
