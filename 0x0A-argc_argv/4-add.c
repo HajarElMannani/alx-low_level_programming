@@ -16,7 +16,7 @@ for (i = 1; i < argc; i++)
 {
 if (!atoi(argv[i]))
 {
-printf("Error\n");
+printf("%s\n", "Error");
 return (1);
 }
 add += atoi(argv[i]);
