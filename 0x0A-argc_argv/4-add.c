@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 #include <stdlib.h>
 /**
  *main - program that adds positive numbers
@@ -15,7 +15,7 @@ if (argc < 1)
 printf("0\n");
 for (i = 1; i < argc; i++)
 {
-if (!isdigit(argv[i]))
+if (!atoi(argv[i]))
 {
 printf("Error\n");
 return (1);
