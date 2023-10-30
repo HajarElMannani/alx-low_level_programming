@@ -15,13 +15,17 @@ char *t, *m;
 int i;
 i = 0;
 t = str;
+if (!str)
+{
+return (0);
+}
 while (*t)
 {
 t++;
 i++;
 }
 m = malloc(i + 1);
-if (!str || !m)
+if (!m)
 {
 return (NULL);
 }
@@ -32,6 +36,6 @@ while (*str)
 t++;
 str++;
 }
-*t = 0; 
+*t = 0;
 return (m);
 }
