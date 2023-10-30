@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-char *t;
+char *t, *m;
 int i;
 i = 0;
 t = str;
@@ -20,11 +20,12 @@ while (*t)
 t++;
 i++;
 }
-t = malloc(i + 1);
-if (str == NULL || t == NULL)
+m = malloc(i + 1);
+if (str == NULL || m == NULL)
 {
 return (NULL);
 }
+t = m; 
 while (*str)
 {
 *t = *str;
@@ -32,5 +33,5 @@ t++;
 str++;
 }
 *t = 0; 
-return (t);
+return (m);
 }
