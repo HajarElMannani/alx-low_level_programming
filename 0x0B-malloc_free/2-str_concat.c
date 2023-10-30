@@ -8,7 +8,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-  char *t, *m;
+  it j, i;
+  char *t;
   if (!s1 && !s2)
     return (NULL);
   while (*s1++)
@@ -19,7 +20,7 @@ char *str_concat(char *s1, char *s2)
     {
       j++;
     }
-  m = malloc(i + j + 1);
+  t = malloc(i + j + 1);
   t = s1;
   while (*s1)
     {
