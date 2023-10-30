@@ -21,17 +21,21 @@ i++;
 }
 }
 else
+{
 s1 = "";
+}
 t = s2;
 if (s2)
 {
-while (t++)
+while (*t++)
 {
 j++;
 }
 }
 else
+{
 s2 = "";
+}
 m = malloc(i + j + 1);
 if (!m)
 return (NULL);
