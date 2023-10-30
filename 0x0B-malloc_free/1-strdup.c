@@ -31,5 +31,6 @@ while (*str)
 t++;
 str++;
 }
+*t = 0; 
 return (t);
 }
