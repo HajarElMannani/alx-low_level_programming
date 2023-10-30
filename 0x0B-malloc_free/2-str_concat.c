@@ -14,28 +14,20 @@ j = 0;
 i = 0;
 t = s1;
 if (s1)
-{
 while (*t++)
 {
 i++;
 }
-}
 else
-{
 s1 = "";
-}
 t = s2;
 if (s2)
-{
 while (*t++)
 {
 j++;
 }
-}
 else
-{
 s2 = "";
-}
 m = malloc(i + j + 1);
 if (!m)
 return (NULL);
