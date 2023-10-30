@@ -49,5 +49,5 @@ while (*s2)
 *t++ = *s2++;
 }
 *t = 0;
-return (t);
+return (m);
 }
