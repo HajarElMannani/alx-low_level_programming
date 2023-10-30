@@ -14,20 +14,22 @@ char *_strdup(char *str)
 char *t;
 int i, j;
 i = 0;
-j = 0;
-while (*str != '\0')
+t = str;
+while (*t)
 {
-j++;
+t++;
+i++;
 }
-t = malloc(sizeof(char) * j);
+t = malloc(i + 1);
 if (str == NULL || t == NULL)
 {
 return (NULL);
 }
-while (str[i] != '\0')
+while (*str)
 {
-t[i] = str[i];
-i++;
+*t = *str;
+t++;
+str++;
 }
 return (t);
 }
