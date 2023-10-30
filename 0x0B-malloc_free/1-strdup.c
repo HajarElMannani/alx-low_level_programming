@@ -21,11 +21,11 @@ t++;
 i++;
 }
 m = malloc(i + 1);
-if (str == NULL || m == NULL)
+if (!str || !m)
 {
 return (NULL);
 }
-t = m; 
+t = m;
 while (*str)
 {
 *t = *str;
