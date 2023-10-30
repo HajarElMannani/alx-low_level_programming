@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-  it j, i;
+  int j, i;
   char *t;
   if (!s1 && !s2)
     return (NULL);
