@@ -32,7 +32,7 @@ for (i = 0; i < ac; i++)
 for (j = 0; j < av[i][j]; j++)
 {
 t[n] = av[i][j];
-n++
+n++;
 }
 if (t[n] == '\0')
 {
