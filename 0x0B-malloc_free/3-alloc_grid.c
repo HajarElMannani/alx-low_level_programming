@@ -32,6 +32,5 @@ for (j = 0; j < width; j++)
 {
 grd[i][j] = 0;
 }
-}
 return (grd);
 }
