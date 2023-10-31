@@ -24,7 +24,7 @@ len++;
 }
 len = len + ac;
 }
-t = malloc(sizeof(char) * len);
+t = malloc(sizeof(char) * len + 1);
 if (t == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
