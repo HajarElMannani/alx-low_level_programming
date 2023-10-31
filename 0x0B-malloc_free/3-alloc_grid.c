@@ -16,7 +16,7 @@ int **grd;
 if (width <= 0 || height <= 0)
 return (NULL);
 grd = malloc(sizeof(int) * height);
-if (!grd)
+if (grd == NULL)
 return (NULL);
 for (i = 0; i < height; i++)
 {
