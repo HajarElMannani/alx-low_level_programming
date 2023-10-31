@@ -15,7 +15,7 @@ int i, j;
 int **grd;
 if (width <= 0 || height <= 0)
 return (NULL);
-grd = malloc(sizeof(int) * height);
+grd = malloc(sizeof(int *) * height);
 if (grd == NULL)
 return (NULL);
 for (i = 0; i < height; i++)
@@ -24,7 +24,7 @@ grd[i] = malloc(sizeof(int) * width);
 if (grd[i] == NULL)
 {
 while (i >= 0)
-free(grd[i]);
+free(grd[i--]);
 free(grd);
 return (NULL);
 }
