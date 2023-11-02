@@ -1,4 +1,4 @@
-#include <stlib.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  *_calloc - function that allocates memory for an array, using malloc
@@ -19,8 +19,7 @@ if (ptr == NULL)
 return (NULL);
 while (i < nmemb * size)
 }
-ptr[i] = 0;
-i++;
+ptr[i++] = 0;
 }
 return (ptr);
 }
