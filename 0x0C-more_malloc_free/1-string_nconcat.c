@@ -23,7 +23,7 @@ if (!s2)
 s2 = "";
 while (s1[i] != '\0')
 i++;
-while (s2[j] !='\0')
+while (s2[j] != '\0')
 j++;
 if (n > j)
 n = j;
@@ -36,5 +36,5 @@ while (*s1)
 while (k < n)
 *s++ = s2[k++];
 *s = '\0';
-return(ptr);
+return (ptr);
 }
