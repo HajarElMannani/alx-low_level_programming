@@ -18,7 +18,7 @@ return (NULL);
 arr[0] = min;
 for (i = 1; i < (max - min + 1); i++)
 {
-*++arr;
+arr[i]++;
 }
 return (arr);
 }
