@@ -21,5 +21,5 @@ return (NULL);
 s = ptr;
 while (i < nmemb)
 s[i++] = 0;
-return (ptr);
+return (s);
 } 
