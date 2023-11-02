@@ -20,7 +20,9 @@ while (s1)
 i++;
 while (s2)
 j++;
-ptr = malloc(i + j + 1);
+if (n > j)
+n = j;
+ptr = malloc((i + n + 1) * sizeof(char));
 if (ptr == NULL)
 return (NULL);
 else
