@@ -11,14 +11,18 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j;
+  unsigned int i, j, k;
 char *ptr;
 char *s;
 i = 0;
 j = 0;
-while (s1)
+if (!s1)
+s1 = "";
+if (!s2)
+s2 = "";
+while (*s1)
 i++;
-while (s2)
+while (*s2)
 j++;
 if (n > j)
 n = j;
@@ -27,16 +31,12 @@ if (ptr == NULL)
 return (NULL);
 else
 {
-if (!s1)
-s1 = "";
-if (!s2)
-s2 = "";
-if (s1)
-*s++ = *s1++;
-if (n < j && s2)
-*s++ = *s2++;
-}
-*s++ = '\0';
 ptr = s;
+while (*s1)
+*s++ = *s1++;
+while (k < n)
+*s++ = s2[k++];
+}
+*s = '\0';
 return(ptr);
 }
