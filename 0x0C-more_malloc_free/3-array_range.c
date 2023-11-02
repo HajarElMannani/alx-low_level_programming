@@ -13,7 +13,7 @@ int i, n;
 n = max - min + 1;
 if (min > max)
 return (NULL);
-arr = malloc((max - mn + 1) * sizeof(int));
+arr = malloc((max - min + 1) * sizeof(int));
 if (arr == NULL)
 return (NULL);
 arr[0] = min;
