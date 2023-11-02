@@ -36,5 +36,5 @@ while (*s1)
 while (k < n)
 *s++ = s2[k++];
 *s = '\0';
- return(s);
+return(ptr);
 }
