@@ -19,7 +19,7 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (NULL);
 s = ptr;
-while (i < (nmemb * size))
+while (i < nmemb)
 {
 s[i] = 0;
 i++;
