@@ -16,22 +16,22 @@ char *ptr;
 char *s;
 i = 0;
 j = 0;
-while (*s1)
+while (s1)
 i++;
-while (*s2)
+while (s2)
 j++;
 ptr = malloc(i + j + 1);
 if (ptr == NULL)
 return (NULL);
 else
 {
-if (s1 == NULL)
+if (!s1)
 s1 = "";
-if (s2 == NULL)
+if (!s2)
 s2 = "";
 if (s1)
 *s++ = *s1++;
-if (n < j || s2)
+if (n < j && s2)
 *s++ = *s2++;
 }
 *s++ = '\0';
