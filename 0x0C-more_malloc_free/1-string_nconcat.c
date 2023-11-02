@@ -32,7 +32,7 @@ if (ptr == NULL)
 return (NULL);
 else
 {
-ptr = s;
+s = ptr;
 while (*s1)
 *s++ = *s1++;
 while (k < n)
