@@ -21,23 +21,20 @@ if (!s1)
 s1 = "";
 if (!s2)
 s2 = "";
-while (*s1)
+while (s1[i] != '\0')
 i++;
-while (*s2)
+while (s2[j] !='\0')
 j++;
 if (n > j)
 n = j;
 ptr = malloc((i + n + 1) * sizeof(char));
 if (ptr == NULL)
 return (NULL);
-else
-{
 s = ptr;
 while (*s1)
 *s++ = *s1++;
 while (k < n)
 *s++ = s2[k++];
-}
 *s = '\0';
-return(ptr);
+ return(s);
 }
