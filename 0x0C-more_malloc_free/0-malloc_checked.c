@@ -15,7 +15,7 @@ if (ptr == NULL)
 _putchar('9');
 _putchar('8');
 _putchar('\n');
-exit(1);
+exit(98);
 }
 else
 return (ptr);
