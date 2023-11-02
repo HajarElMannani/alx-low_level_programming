@@ -13,13 +13,13 @@ int i, n;
 n = max - min + 1;
 if (min > max)
 return (NULL);
-arr = malloc(n * sizeof(int));
+arr = malloc((max - mn + 1) * sizeof(int));
 if (arr == NULL)
 return (NULL);
 arr[0] = min;
 for (i = 1; i < n; i++)
 {
-arr[i] = min++;
+arr[i] = ++min;
 }
 return (arr);
 }
