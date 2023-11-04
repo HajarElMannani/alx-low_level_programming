@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -12,5 +12,6 @@ if (d == NULL)
 return;
 free(d->name);
 free(d->owner);
+free(d->age); 
 free(d);
 }
