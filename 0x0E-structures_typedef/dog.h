@@ -1,7 +1,10 @@
 #ifndef DG_H
 #define DG_H
 /**
- *struct dog: structure containing name, age and owner
+ *struct dog - structure containing name, age and owner
+ *@name: name of the dog
+ *@age: Age of dog
+ *@owner: Owner of the dog
  */
 struct dog
 {
