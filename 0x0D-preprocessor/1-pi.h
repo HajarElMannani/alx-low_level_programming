@@ -1,5 +1,5 @@
-#ifndef PI_H
-#define PI_H
+#ifndef P_H
+#define P_H
 /* definition of the macro PI*/
-#define PI 3.14
-#endif /*PI_H*/
+#define PI 3.14159265359
+#endif /*P_H*/
