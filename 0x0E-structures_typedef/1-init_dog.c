@@ -17,5 +17,4 @@ return (NULL);
 (*d).age = age;
 (*d).owner = owner;
 return (d);
-free(d);
 }
