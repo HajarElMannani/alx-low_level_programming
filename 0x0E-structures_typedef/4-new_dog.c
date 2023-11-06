@@ -58,14 +58,19 @@ return (NULL);
 }
 newdog->name = malloc(sizeof(char) * _strlen(newdog->name) + 1);
 if (newdog->name == NULL)
+{
+free(newdog);
 return (NULL);
+}
 newdog->owner = malloc(sizeof(char) * _strlen(newdog->owner) + 1);
 if (newdog->owner == NULL)
+}
+free(newdog->name);
+free(newdog);
 return (NULL);
+}
 newdog->name = _strcpy(newdog->name, name);
 newdog->age = age;
 newdog->owner = _strcpy(newdog->owner, owner);
 return (newdog);
 }
-
-
