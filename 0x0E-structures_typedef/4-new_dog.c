@@ -56,15 +56,15 @@ if (newdog == NULL)
 {
 return (NULL);
 }
-newdog->name = malloc(sizeof(char) * (_strlen(name)) + 1);
+newdog->name = malloc(sizeof(char) * (_strlen(name) + 1));
 if (newdog->name == NULL)
 {
 free(newdog);
 return (NULL);
 }
-newdog->owner = malloc(sizeof(char) * (_strlen(owner)) + 1);
+ newdog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 if (newdog->owner == NULL)
-}
+{
 free(newdog->name);
 free(newdog);
 return (NULL);
