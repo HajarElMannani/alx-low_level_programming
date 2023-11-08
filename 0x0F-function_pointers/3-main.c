@@ -26,7 +26,7 @@ if ((*argv[2] == '/' || *argv[2] == '%') && atoi(argv[3]) == 0)
 printf("Error\n");
 exit(100);
 }
- num =  get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
+num =  get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", num);
 return (0);
 }
