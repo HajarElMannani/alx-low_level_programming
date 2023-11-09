@@ -25,8 +25,7 @@ for (i = 1; i < n; i++)
 {
 ptr2 = va_arg(prstr, char *);
 if (ptr2 == NULL)
-printf("%s", "nill");
-else
+ptr2 = "(nil)"
 printf("%s%s", ptr1, ptr2);
 }
 printf("\n");
