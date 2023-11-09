@@ -15,15 +15,14 @@ va_list prstr;
 char *ptr1;
 char *ptr2;
 
-
+va_start(prstr, n);
 if (separator == NULL || *separator == 0)
 ptr1 = "";
 else
 ptr1 = (char *)separator;
-va_start(prstr, n);
 if (n > 0)
 printf("%s", va_arg(prstr, char *));
-for (i = 1; i < n ; i++)
+for (i = 1; i < n ;i++)
 {
 ptr2 = va_arg(prstr, char *);
 if (ptr2 == NULL)
