@@ -13,8 +13,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 unsigned int i;
 char *ptr;
 va_list prnum;
-if (n == 0)
-exit();
 if (separator == NULL || *separator == 0)
 ptr = "";
 else
