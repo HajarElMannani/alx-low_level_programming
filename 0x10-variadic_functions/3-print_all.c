@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
@@ -7,7 +6,7 @@
  *@format: list of formats
  *Return: Nothing
  */
-void print_all(const char * const format, ...)e
+void print_all(const char * const format, ...)
 {
 int i, j;
 char *ptr;
