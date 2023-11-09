@@ -14,7 +14,7 @@ unsigned int i;
 char *ptr;
 va_list prnum;
 if (n == 0)
-return;
+exit();
 if (separator == NULL || *separator == 0)
 ptr = "";
 else
