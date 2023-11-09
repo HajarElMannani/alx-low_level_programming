@@ -19,13 +19,13 @@ if (separator == NULL || *separator == 0)
 ptr1 = "";
 else
 ptr1 = (char *)separator;
-ptr2 = va_arg(prstr, char *);
 if (n > 0)
-printf("%s", ptr2);
+printf("%s", va_arg(prstr, char *));
+ptr2 = va_arg(prstr, char *);
 for (i = 1; i < n; i++)
 {
 if (ptr2 == NULL)
-printf("%s%s", ptr1, "nill");
+printf("%s", "nill");
 else
 printf("%s%s", ptr1, ptr2);
 }
