@@ -20,9 +20,11 @@ ptr = "";
 else
 ptr = (char *)separator;
 va_start(prnum, n);
-for (i = 0; i < n; i++)
+if (n > 0)
+printf("%d", va_arg(prnum, int));
+for (i = 1; i < n; i++)
 {
-printf("%d%s", va_arg(prnum, int), ptr);
+printf("%s%d", ptr, va_arg(prnum, int));
 }
 printf("\n");
 }
