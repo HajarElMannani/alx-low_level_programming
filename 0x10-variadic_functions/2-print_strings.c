@@ -21,12 +21,7 @@ else
 ptr1 = (char *)separator;
 ptr2 = va_arg(prstr, char *);
 if (n > 0)
-{
-if (ptr2 == NULL)
-printf("nill")
-else
 printf("%s", ptr2);
-}
 for (i = 1; i < n; i++)
 {
 if (ptr2 == NULL)
