@@ -31,4 +31,5 @@ else
 printf("%s%s", ptr1, ptr2);
 }
 printf("\n");
+va_end(prstr);
 }
