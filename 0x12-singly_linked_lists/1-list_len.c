@@ -11,10 +11,10 @@ unsigned int i;
 i = 0;
 if (h == NULL)
 return (0);
-while (h->next != NULL)
+while (h != NULL)
 {
 i++;
 h = h->next;
 }
-return (i + 1);
+return (i);
 }
