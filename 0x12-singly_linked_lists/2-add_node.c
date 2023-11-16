@@ -14,7 +14,7 @@ list_t *first;
 i = 0;
 first = malloc(sizeof(list_t));
 if (first == NULL)
-return (NULL);   
+return (NULL);
 first->str = strdup(str);
 if (strdup(str) != NULL)
 {
