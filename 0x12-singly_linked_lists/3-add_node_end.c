@@ -37,5 +37,5 @@ while (ptr->next != NULL)
 ptr = ptr->next;
 }
 ptr->next = last;
-return(last);
+return (last);
 }
