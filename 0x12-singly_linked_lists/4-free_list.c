@@ -10,6 +10,8 @@ list_t *temp;
 while (head != NULL)
 { 
 temp  = head->next;
+free(head->next);
+free(head->str);
 free(head);
 head = temp;
 }
