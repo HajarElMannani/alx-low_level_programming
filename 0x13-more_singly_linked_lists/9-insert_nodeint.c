@@ -19,6 +19,12 @@ newnode = malloc(sizeof(listint_t));
 if (newnode == NULL)
 return (NULL);
 newnode->n = n;
+if (idx == 0 || *head == NULL)
+{
+newnode->next = *head;
+*head = newnode;
+return (newnode);
+}
 prev = *head;
 while (j < (idx - 1) && prev->next != NULL)
 {
@@ -31,8 +37,6 @@ while (i < idx && ptr->next != NULL)
 ptr = ptr->next;
 i++;
 }
-if (ptr == NULL)
-return (NULL);
 if (i == idx)
 {
 newnode->next = ptr;
