@@ -31,6 +31,11 @@ while (j < (idx - 1) && prev->next != NULL)
 prev = prev->next;
 j++;
 }
+if (prev == NULL)
+{
+newnode->next == NULL;
+return (newnode);
+}
 ptr = *head;
 while (i < idx && ptr->next != NULL)
 {
