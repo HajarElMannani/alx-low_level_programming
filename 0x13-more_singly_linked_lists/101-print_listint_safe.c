@@ -10,11 +10,11 @@ unsigned int i;
 i = 0;
 if (head == NULL)
 exit(98);
-/**while (head->next != NULL)
+while (head->next != NULL)
 {
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 i++;
 }
-return (i);*/
+return (i);
 }
