@@ -2,27 +2,7 @@
 #define BITMANIP_H
 
 #include <stdlib.h>
-unsigned int power(unsigned int a, unsigned int b);
-/**
- *power - calculate a power b
- *@a: base
- *@b: power
- *Return: power of a
- */
-unsigned int power(unsigned int a, unsigned int b)
-{
-unsigned int p, i;
-i = 0;
-p = 1;
-if (b == 0)
-return (1);
-while (i < b)
-{
-p = p * a;
-i++;
-}
-return (p);
-}
+
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
