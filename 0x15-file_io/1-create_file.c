@@ -20,8 +20,8 @@ while (text_content[len] != '\0')
 {
 len++;
 }
-wr = write(p, text_content, len);
 }
+wr = write(p, text_content, len);
 if (wr == -1 || wr != len)
 return (-1);
 close(p);
