@@ -6,14 +6,14 @@
  */
 char *buff(char *str)
 {
-  char *buff;
+char *buff;
 buff = malloc(sizeof(char) * 1024);
- if (buff == NULL)
- {
+if (buff == NULL)
+{
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str);
 exit(99);
 }
- return (buff);
+return (buff);
 }
 /**
  *main - copy content of file into another
@@ -44,7 +44,6 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(file1);
 exit(99);
 }
-do{
 len = read(file1, buffer, 1024);
 if (len == -1)
 {
@@ -52,6 +51,7 @@ dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 free(buffer);
 exit(98);
 }
+do{
 wr = write(file2, buffer, len);
 if (wr == -1 || wr != len)
 {
