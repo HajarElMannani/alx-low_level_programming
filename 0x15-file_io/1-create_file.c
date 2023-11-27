@@ -22,7 +22,7 @@ len++;
 }
 wr = write(p, text_content, len);
 }
-if (wr == -1 || wr != len)
+ if (wr == -1)/* || wr != len*/
 return (-1);
 close(p);
 return (1);
