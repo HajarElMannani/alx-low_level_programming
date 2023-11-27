@@ -48,8 +48,8 @@ exit(97);
 buffer = buff(argv[2]);
 file1 = open(argv[1], O_RDONLY);
 file2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-do {
 len = read(file1, buffer, 1024);
+do {
 if (len == -1 || file1 == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
