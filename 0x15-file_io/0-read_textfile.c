@@ -27,7 +27,7 @@ free(buffer);
 return (0);
 }
 wr = write(STDOUT_FILENO, buffer, letters);
-if (wr == -1)
+if (wr == -1 || wr != len)
 {
 free(buffer);
 return (0);
