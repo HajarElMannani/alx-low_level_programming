@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 int p;
 ssize_t len, wr;
 char *buffer;
-if (filename == NULL)
+if (filename == NULL || letters == 0)
 return (0);
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
@@ -26,12 +26,12 @@ len = read(p, buffer, letters);
 if (len == -1)
 {
 free(buffer);
+close(p);
 return (0);
 }
-wr = write(STDOUT_FILENO, buffer, letters);
+wr = write(STDOUT_FILENO, buffer, len);
 if (wr == -1 || wr != len)
 {
-free(buffer);
 return (0);
 }
 free(buffer);
