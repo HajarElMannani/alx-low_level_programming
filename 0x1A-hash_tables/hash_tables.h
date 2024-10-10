@@ -5,12 +5,14 @@
 #include<string.h>
 #include<unistd.h>
 /**
- * struct hash node_s - Node of a hash table
+ * struct hash_node_s - Node of a hash table
+ *
  * @key: The key, string
  * The key is unique in the HashTable
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  */
+
 typedef struct hash_node_s
 {
 char *key;
@@ -20,6 +22,7 @@ struct hash_node_s *next;
 
 /**
  * struct hash_table_s - Hash table data structure
+ *
  * @size: The size of the array
  * @array: An array of size @size
  * Each cell of this array is a pointer to the first node of a linked list,
