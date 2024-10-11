@@ -14,7 +14,7 @@ short commaf = 0;
 if (ht == NULL)
 return;
 printf("{");
-for (i = 0; i <= ht->size; i++)
+for (i = 0; i < ht->size; i++)
 {
 while (ht->array[i] != NULL)
 {
